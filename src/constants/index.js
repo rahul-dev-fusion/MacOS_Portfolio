@@ -155,6 +155,13 @@ const socials = [
     bg: "#05b6f6",
     link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
   },
+  {
+    id: 5,
+    text: "Email",
+    icon: "/icons/work.svg",
+    bg: "#ff866b",
+    link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+  },
 ];
 
 const photosLinks = [

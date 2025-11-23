@@ -92,9 +92,11 @@ const Dock = () => {
                 className={canOpen ? "" : "opacity-60"}
               />
             </button>
+            
           </div>
         ))}
         <Tooltip id="dock-tooltip" place="top" className="tooltip" />
+        
       </div>
     </section>
   );
