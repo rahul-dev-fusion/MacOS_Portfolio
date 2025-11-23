@@ -10,6 +10,8 @@ import Resume from "#windows/Resume";
 import Finder from "#windows/Finder";
 import Text from "#windows/Text";
 import Image from "#windows/Image";
+import Contact from "#windows/Contact";
+import Home from "#components/Home";
 
 gsap.registerPlugin(Draggable);
 
@@ -17,6 +19,7 @@ const App = () => {
   return (
     <main>
       <Navbar />
+      <Home />
       <Welcome />
       <Dock />
 
@@ -26,6 +29,7 @@ const App = () => {
       <Finder />
       <Text />
       <Image />
+      <Contact />
     </main>
   );
 };
