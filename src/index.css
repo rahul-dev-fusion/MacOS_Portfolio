@@ -51,12 +51,12 @@ body {
       @apply flex items-center gap-5 max-sm:hidden;
 
       p {
-        @apply text-sm cursor-pointer hover:underline transition-all;
+        @apply text-sm cursor-pointer hover:font-semibold transition-all;
       }
     }
 
     time {
-      @apply text-sm font-medium text-black;
+      @apply text-sm font-medium text-black ;
     }
   }
 }
@@ -106,11 +106,11 @@ body {
     }
 
     .minimize {
-      @apply size-3.5 rounded-full bg-[#ffc030];
+      @apply size-3.5 rounded-full bg-[#ffc030] cursor-pointer;
     }
 
     .maximize {
-      @apply size-3.5 rounded-full bg-[#2acb42];
+      @apply size-3.5 rounded-full bg-[#2acb42] cursor-pointer;
     }
   }
 
@@ -360,6 +360,10 @@ body {
 
   #imgfile {
     @apply w-xl absolute top-40 left-2/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+
+    h2 {
+      @apply font-bold text-sm text-center w-full;
+    }
 
     #window-header {
       p {
