@@ -13,6 +13,7 @@ import Image from "#windows/Image";
 import Contact from "#windows/Contact";
 import Home from "#components/Home";
 import Photos from "#windows/Photos";
+import DogFollower from "#components/DogFollower";
 
 gsap.registerPlugin(Draggable);
 
@@ -32,6 +33,7 @@ const App = () => {
       <Image />
       <Contact />
       <Photos />
+      <DogFollower />
     </main>
   );
 };
