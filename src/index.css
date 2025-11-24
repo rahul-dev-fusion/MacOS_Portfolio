@@ -56,7 +56,7 @@ body {
     }
 
     time {
-      @apply text-sm font-medium text-black ;
+      @apply text-sm font-medium text-black;
     }
   }
 }
