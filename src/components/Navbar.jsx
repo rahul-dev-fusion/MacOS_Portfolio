@@ -3,9 +3,18 @@ import dayjs from "dayjs";
 import React from "react";
 import { navIcons, navLinks } from "#constants";
 import useWindowStore from "#store/window";
+import useDogFollowerStore from "#store/dogFollower";
 
 const Navbar = () => {
   const { openWindow } = useWindowStore();
+  const { toggleDogFollower, isVisible } = useDogFollowerStore();
+
+  const handleIconClick = (id) => {
+    if (id === 5) {
+      toggleDogFollower();
+    }
+  };
+
   return (
     <nav>
       <div>
@@ -24,8 +33,14 @@ const Navbar = () => {
       <div>
         <ul>
           {navIcons.map(({ id, img }) => (
-            <li key={id}>
-              <img src={img} alt={`icon-${id}`} className="icon" />
+            <li key={id} onClick={() => handleIconClick(id)}>
+              <img
+                src={img}
+                alt={`icon-${id}`}
+                className={
+                  id === 5 ? `icon h-6 ${isVisible ? "bg-white/50" : ""}` : "icon"
+                }
+              />
             </li>
           ))}
         </ul>

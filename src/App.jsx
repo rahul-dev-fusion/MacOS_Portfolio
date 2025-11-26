@@ -14,10 +14,13 @@ import Contact from "#windows/Contact";
 import Home from "#components/Home";
 import Photos from "#windows/Photos";
 import DogFollower from "#components/DogFollower";
+import useDogFollowerStore from "#store/dogFollower";
 
 gsap.registerPlugin(Draggable);
 
 const App = () => {
+  const { isVisible } = useDogFollowerStore();
+
   return (
     <main>
       <Navbar />
@@ -33,7 +36,7 @@ const App = () => {
       <Image />
       <Contact />
       <Photos />
-      <DogFollower />
+      {isVisible && <DogFollower />}
     </main>
   );
 };

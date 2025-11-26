@@ -33,6 +33,10 @@ const navIcons = [
     id: 4,
     img: "icons/mode.svg",
   },
+  {
+    id: 5,
+    img: "icons/panda.svg",
+  },
 ];
 
 const dockApps = [
