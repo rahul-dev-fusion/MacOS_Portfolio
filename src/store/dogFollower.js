@@ -3,7 +3,7 @@ import { immer } from "zustand/middleware/immer";
 
 const useDogFollowerStore = create(
   immer((set) => ({
-    isVisible: true,
+    isVisible: false,
 
     toggleDogFollower: () =>
       set((state) => {
